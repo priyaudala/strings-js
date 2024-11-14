@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>strings in js</title>
+</head>
+<body>
+    <script>
+        const k = "   krishnapriya   ";
+        console.log(k.trim())//krishnapriya
+        console.log(k.trimStart())//krishnapriya----
+        console.log(k.trimLeft())//krishnapriya----
+        console.log(k.trimEnd())//----krishnapriya
+        console.log(k.trimRight())//----krishnapriya
+        const a = "sai";
+        console.log(a.charAt(-2));//
+        console.log(a.charAt(9));//
+        console.log(a.charAt(2));//i
+        console.log(a.charAt[7]);//undefined
+        console.log(a.indexOf("a"));//-1
+        console.log(a.indexOf("u"));//3
+        console.log(a.at(-4));//u
+        console.log(a.lastIndexOf("h"));//5
+        console.log(a.toLowerCase());//shruthi
+        console.log(a.toUpperCase());//SHRUTHI
+        console.log(a.startsWith("bha"));//false
+        console.log(a.startsWith("shr"));//true
+        console.log(a.endsWith("thi"));//true
+        console.log(a.endsWith("avi"));//false
+        console.log(a.length);//7
+        const p = "    vishnu     ";
+        const s = p.trimEnd();
+        console.log(p);//---vishnu---
+        console.log(s);//---vishnu
+        console.log(p.trim());//vishnu
+        const t = p.trim();
+        console.log(t);//vishnu
+        const q = "    vishnu     ";
+        const r = q.trimStart();
+        console.log(q);//---vishnu----
+        console.log(r);//vishnu----
+    </script>
+</body>
+</html>
